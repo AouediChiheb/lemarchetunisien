@@ -1,0 +1,167 @@
+footer {
+  margin-top: 40px;
+}
+
+/* Services Banner */
+.services-banner {
+  background-color: #d10019;
+  color: white;
+  padding: 25px 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.service-icon {
+  font-size: 28px;
+}
+
+.service-rating {
+  display: flex;
+  gap: 2px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.service-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Main Footer */
+.footer-main {
+  background-color: #f8f8f8;
+  padding: 40px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  max-width: 180px;
+}
+
+.company-info p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.footer-column h4 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 12px;
+}
+
+.footer-column a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column a:hover {
+  color: #d10019;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #777;
+}
+
+.payment-methods {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-methods img {
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .service-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .company-info {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .company-info {
+    grid-column: span 1;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .payment-methods {
+    justify-content: center;
+  }
+}
